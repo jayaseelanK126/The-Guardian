@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'The Guardian' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  
+  pod 'ReachabilitySwift'
+  pod 'RealmSwift'
+
+
+  # Pods for The Guardian
+
+  target 'The GuardianTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'The GuardianUITests' do
+    # Pods for testing
+  end
+
+end
