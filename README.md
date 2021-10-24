@@ -23,3 +23,8 @@
  * Clone GitHub Repository - https://github.com/jayaseelanK126/The-Guardian.git
  * Pod Install using Terminal 
  * Double click 'The Guardian.xcworkspace' file in The - Guardian application cloned root directory
+
+# Application Screenshots
+
+   * News List Page 
+   ![Screenshot](News List.png)
