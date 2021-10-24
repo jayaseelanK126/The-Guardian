@@ -51,6 +51,22 @@ public class GenericMethod: NSObject
         }
         return ("",Date())
     }
+    class func loadURLToData(urlStr: String) -> Data
+    {
+        if let url = URL(string: urlStr)
+        {
+            do
+            {
+                return try Data(contentsOf: url)
+                
+            }
+            catch
+            {
+                print("\(error)")
+            }
+        }
+        return Data()
+    }
 }
 
 

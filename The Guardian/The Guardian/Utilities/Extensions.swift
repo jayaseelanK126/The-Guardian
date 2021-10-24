@@ -47,3 +47,44 @@ extension NSAttributedString
         self.init(attributedString: attributedString)
     }
 }
+
+//MARK:- UIApplication
+extension UIApplication
+{
+    func topMostController() -> UIViewController
+    {
+        var topController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController
+        while ((topController?.presentedViewController) != nil) {
+            topController = topController?.presentedViewController
+        }
+        return topController!
+    }
+    
+}
+
+extension Notification.Name {
+    static let didReceiveData = Notification.Name("didReceiveData")
+    static let didCompleteTask = Notification.Name("didCompleteTask")
+    static let completedLengthyDownload = Notification.Name("completedLengthyDownload")
+}
+
+extension StringProtocol {
+    var html2AttributedString: NSAttributedString? {
+        Data(utf8).html2AttributedString
+    }
+    var html2String: String {
+        html2AttributedString?.string ?? ""
+    }
+}
+
+extension Data {
+    var html2AttributedString: NSAttributedString? {
+        do {
+            return try NSAttributedString(data: self, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil)
+        } catch {
+            print("error:", error)
+            return  nil
+        }
+    }
+    var html2String: String { html2AttributedString?.string ?? "" }
+}

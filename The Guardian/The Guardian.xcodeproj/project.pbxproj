@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		14AD107ED5D4F4CA1F0A7149 /* Pods_The_GuardianTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533969465E0F9A5FD6836BD8 /* Pods_The_GuardianTests.framework */; };
+		581723A52725492400439646 /* Helvetica-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5817239F2725491A00439646 /* Helvetica-Medium.ttf */; };
+		581723A62725492400439646 /* Helvetica-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 581723A02725491D00439646 /* Helvetica-Italic.ttf */; };
+		581723A72725492400439646 /* Helvetica-BoldOblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 581723A12725491F00439646 /* Helvetica-BoldOblique.ttf */; };
+		581723A82725492400439646 /* Helvetica-rounded-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 581723A22725492100439646 /* Helvetica-rounded-bold.ttf */; };
+		581723A92725492400439646 /* Helvetica-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 581723A32725492300439646 /* Helvetica-Regular.ttf */; };
+		581723AA2725492400439646 /* Helvetica-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 581723A42725492400439646 /* Helvetica-Bold.ttf */; };
+		581723AC2725521F00439646 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 581723AB2725521E00439646 /* README.md */; };
 		58891B5827248D5F008C2FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58891B5727248D5F008C2FE7 /* AppDelegate.swift */; };
 		58891B5A27248D5F008C2FE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58891B5927248D5F008C2FE7 /* SceneDelegate.swift */; };
 		58891B6F27248D61008C2FE7 /* The_GuardianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58891B6E27248D61008C2FE7 /* The_GuardianTests.swift */; };
@@ -30,15 +37,6 @@
 		58891BBF27249543008C2FE7 /* NewsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58891BBD27249543008C2FE7 /* NewsListTableViewCell.xib */; };
 		58891BC327249567008C2FE7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58891BC127249566008C2FE7 /* DetailsViewController.swift */; };
 		58891BC427249567008C2FE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58891BC227249567008C2FE7 /* ViewController.swift */; };
-		58891BCF27249598008C2FE7 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58891BC627249591008C2FE7 /* Roboto-Light.ttf */; };
-		58891BD027249598008C2FE7 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58891BC727249592008C2FE7 /* Roboto-Italic.ttf */; };
-		58891BD127249598008C2FE7 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58891BC827249593008C2FE7 /* Roboto-LightItalic.ttf */; };
-		58891BD227249598008C2FE7 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 58891BC927249594008C2FE7 /* LICENSE.txt */; };
-		58891BD327249598008C2FE7 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58891BCA27249595008C2FE7 /* Roboto-Regular.ttf */; };
-		58891BD427249598008C2FE7 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58891BCB27249596008C2FE7 /* Roboto-MediumItalic.ttf */; };
-		58891BD527249598008C2FE7 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58891BCC27249597008C2FE7 /* Roboto-BoldItalic.ttf */; };
-		58891BD627249598008C2FE7 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58891BCD27249597008C2FE7 /* Roboto-Bold.ttf */; };
-		58891BD727249598008C2FE7 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58891BCE27249598008C2FE7 /* Roboto-Medium.ttf */; };
 		58891BD927249638008C2FE7 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 58891BD827249638008C2FE7 /* Base.lproj */; };
 		B396568122104631A5086C50 /* Pods_The_Guardian_The_GuardianUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE4BC4FD8058B39CA0C99E7 /* Pods_The_Guardian_The_GuardianUITests.framework */; };
 		D7FDBFA2C72B03838322A140 /* Pods_The_Guardian.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7089EEB6D02899AEB59013C7 /* Pods_The_Guardian.framework */; };
@@ -65,6 +63,13 @@
 		36C22F70EE9AD5961690108B /* Pods-The Guardian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Guardian.debug.xcconfig"; path = "Target Support Files/Pods-The Guardian/Pods-The Guardian.debug.xcconfig"; sourceTree = "<group>"; };
 		3C7EFAC343DD0B56510DF300 /* Pods-The Guardian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Guardian.release.xcconfig"; path = "Target Support Files/Pods-The Guardian/Pods-The Guardian.release.xcconfig"; sourceTree = "<group>"; };
 		533969465E0F9A5FD6836BD8 /* Pods_The_GuardianTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_GuardianTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5817239F2725491A00439646 /* Helvetica-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Medium.ttf"; sourceTree = "<group>"; };
+		581723A02725491D00439646 /* Helvetica-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Italic.ttf"; sourceTree = "<group>"; };
+		581723A12725491F00439646 /* Helvetica-BoldOblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-BoldOblique.ttf"; sourceTree = "<group>"; };
+		581723A22725492100439646 /* Helvetica-rounded-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-rounded-bold.ttf"; sourceTree = "<group>"; };
+		581723A32725492300439646 /* Helvetica-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Regular.ttf"; sourceTree = "<group>"; };
+		581723A42725492400439646 /* Helvetica-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Bold.ttf"; sourceTree = "<group>"; };
+		581723AB2725521E00439646 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		58891B5427248D5F008C2FE7 /* The Guardian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Guardian.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58891B5727248D5F008C2FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58891B5927248D5F008C2FE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,15 +96,6 @@
 		58891BBD27249543008C2FE7 /* NewsListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsListTableViewCell.xib; sourceTree = "<group>"; };
 		58891BC127249566008C2FE7 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		58891BC227249567008C2FE7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		58891BC627249591008C2FE7 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
-		58891BC727249592008C2FE7 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
-		58891BC827249593008C2FE7 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
-		58891BC927249594008C2FE7 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
-		58891BCA27249595008C2FE7 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		58891BCB27249596008C2FE7 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
-		58891BCC27249597008C2FE7 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
-		58891BCD27249597008C2FE7 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
-		58891BCE27249598008C2FE7 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		58891BD827249638008C2FE7 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Base.lproj; path = "../../../../Desktop/The Guardian/The Guardian/Base.lproj"; sourceTree = "<group>"; };
 		7089EEB6D02899AEB59013C7 /* Pods_The_Guardian.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Guardian.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		856EFD524FBF042C9AEF9C6F /* Pods-The GuardianTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The GuardianTests.release.xcconfig"; path = "Target Support Files/Pods-The GuardianTests/Pods-The GuardianTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +136,7 @@
 		58891B4B27248D5F008C2FE7 = {
 			isa = PBXGroup;
 			children = (
+				581723AB2725521E00439646 /* README.md */,
 				58891B5627248D5F008C2FE7 /* The Guardian */,
 				58891B6D27248D61008C2FE7 /* The GuardianTests */,
 				58891B7727248D61008C2FE7 /* The GuardianUITests */,
@@ -264,15 +261,12 @@
 		58891BC527249576008C2FE7 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				58891BC927249594008C2FE7 /* LICENSE.txt */,
-				58891BCD27249597008C2FE7 /* Roboto-Bold.ttf */,
-				58891BCC27249597008C2FE7 /* Roboto-BoldItalic.ttf */,
-				58891BC727249592008C2FE7 /* Roboto-Italic.ttf */,
-				58891BC627249591008C2FE7 /* Roboto-Light.ttf */,
-				58891BC827249593008C2FE7 /* Roboto-LightItalic.ttf */,
-				58891BCE27249598008C2FE7 /* Roboto-Medium.ttf */,
-				58891BCB27249596008C2FE7 /* Roboto-MediumItalic.ttf */,
-				58891BCA27249595008C2FE7 /* Roboto-Regular.ttf */,
+				581723A42725492400439646 /* Helvetica-Bold.ttf */,
+				581723A12725491F00439646 /* Helvetica-BoldOblique.ttf */,
+				581723A02725491D00439646 /* Helvetica-Italic.ttf */,
+				5817239F2725491A00439646 /* Helvetica-Medium.ttf */,
+				581723A32725492300439646 /* Helvetica-Regular.ttf */,
+				581723A22725492100439646 /* Helvetica-rounded-bold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -409,20 +403,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58891BD727249598008C2FE7 /* Roboto-Medium.ttf in Resources */,
 				58891BBF27249543008C2FE7 /* NewsListTableViewCell.xib in Resources */,
-				58891BD527249598008C2FE7 /* Roboto-BoldItalic.ttf in Resources */,
-				58891BD627249598008C2FE7 /* Roboto-Bold.ttf in Resources */,
-				58891BD027249598008C2FE7 /* Roboto-Italic.ttf in Resources */,
-				58891BD127249598008C2FE7 /* Roboto-LightItalic.ttf in Resources */,
+				581723A72725492400439646 /* Helvetica-BoldOblique.ttf in Resources */,
 				58891B9F27249327008C2FE7 /* LaunchScreen.storyboard in Resources */,
-				58891BD227249598008C2FE7 /* LICENSE.txt in Resources */,
 				58891BD927249638008C2FE7 /* Base.lproj in Resources */,
-				58891BCF27249598008C2FE7 /* Roboto-Light.ttf in Resources */,
-				58891BD427249598008C2FE7 /* Roboto-MediumItalic.ttf in Resources */,
-				58891BD327249598008C2FE7 /* Roboto-Regular.ttf in Resources */,
+				581723A82725492400439646 /* Helvetica-rounded-bold.ttf in Resources */,
+				581723A92725492400439646 /* Helvetica-Regular.ttf in Resources */,
+				581723AC2725521F00439646 /* README.md in Resources */,
+				581723A62725492400439646 /* Helvetica-Italic.ttf in Resources */,
+				581723AA2725492400439646 /* Helvetica-Bold.ttf in Resources */,
 				58891B9D27249319008C2FE7 /* Main.storyboard in Resources */,
 				58891B9427248E18008C2FE7 /* Assets.xcassets in Resources */,
+				581723A52725492400439646 /* Helvetica-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,6 +725,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -762,6 +755,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

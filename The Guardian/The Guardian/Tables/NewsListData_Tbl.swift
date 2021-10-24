@@ -17,6 +17,8 @@ class NewsListData_Tbl: Object
     @objc dynamic var newsThumbnail: String = ""
     @objc dynamic var newsBody: String = ""
     @objc dynamic var newsURL: String = ""
+    @objc dynamic var thumbNailImgData: Data?
+
         
     
     override class func primaryKey() -> String?

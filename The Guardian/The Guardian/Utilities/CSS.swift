@@ -16,33 +16,32 @@ class CSS: NSObject
         label.backgroundColor = UIColor.clear
         label.textColor = textColor
         
-        var fontSizeVal = fontSize
-        
-        if AppConfig.isiPad
-        {
-            fontSizeVal = fontSize + 2.0
-        }
-        
-        if fontCode == "R"
-        {
-            label.font = UIFont(name: "Roboto-Regular", size: fontSizeVal)!
-        }
-        else if fontCode == "M"
-        {
-            label.font = UIFont(name: "Roboto-Medium", size: fontSizeVal)!
-        }
-        else if fontCode == "B"
-        {
-            label.font = UIFont(name: "Roboto-Bold", size: fontSizeVal)!
-        }
-        else if fontCode == "L"
-        {
-            label.font = UIFont(name: "Roboto-Light", size: fontSizeVal)!
-        }
-        else if fontCode == "I"
-        {
-            label.font = UIFont(name: "Roboto-LightItalic", size: fontSizeVal)!
-        }
+//        var fontSizeVal = fontSize
+//
+//        if AppConfig.isiPad
+//        {
+//            fontSizeVal = fontSize + 2.0
+//        }
+//        if fontCode == "R"
+//        {
+//            label.font = UIFont(name: "Helvetica-Regular", size: fontSizeVal)!
+//        }
+//        else if fontCode == "M"
+//        {
+//            label.font = UIFont(name: "Helvetica-Medium", size: fontSizeVal)!
+//        }
+//        else if fontCode == "B"
+//        {
+//            label.font = UIFont(name: "Helvetica-Bold", size: fontSizeVal)!
+//        }
+//        else if fontCode == "L"
+//        {
+//            label.font = UIFont(name: "Helvetica-Regular", size: fontSizeVal)!
+//        }
+//        else if fontCode == "I"
+//        {
+//            label.font = UIFont(name: "Helvetica-Italic", size: fontSizeVal)!
+//        }
         
     }
     
@@ -83,22 +82,22 @@ class CSS: NSObject
             CSS.inserGradientLayer(layer: button.layer, Colors: [#colorLiteral(red: 0.9408123493, green: 0.578928709, blue: 0.08287333697, alpha: 1),#colorLiteral(red: 0.6306855083, green: 0.1065401658, blue: 0.01793291047, alpha: 1)])
         }
         
-        if fontCode == "R"
-        {
-            button.titleLabel?.font = UIFont(name: "Roboto-Regular", size: fontSize)!
-        }
-        else if fontCode == "M"
-        {
-            button.titleLabel?.font = UIFont(name: "Roboto-Medium", size: fontSize)!
-        }
-        else if fontCode == "B"
-        {
-            button.titleLabel?.font = UIFont(name: "Roboto-Bold", size: fontSize)!
-        }
-        else if fontCode == "L"
-        {
-            button.titleLabel?.font = UIFont(name: "Roboto-Light", size: fontSize)!
-        }
+//        if fontCode == "R"
+//        {
+//            button.titleLabel?.font = UIFont(name: "Helvetica-Regular", size: fontSize)!
+//        }
+//        else if fontCode == "M"
+//        {
+//            button.titleLabel?.font = UIFont(name: "Helvetica-Medium", size: fontSize)!
+//        }
+//        else if fontCode == "B"
+//        {
+//            button.titleLabel?.font = UIFont(name: "Helvetica-Regular", size: fontSize)!
+//        }
+//        else if fontCode == "L"
+//        {
+//            button.titleLabel?.font = UIFont(name: "Helvetica-Italic", size: fontSize)!
+//        }
         
         button.titleLabel?.textAlignment = .center
         button.layer.cornerRadius = isRoundCorner ? button.frame.size.height / 2 : cornerRadius
@@ -106,7 +105,6 @@ class CSS: NSObject
         button.setTitleColor(titleSelectedColor, for: .selected)
         button.tintColor = UIColor.clear
         button.backgroundColor = backgroundColor
-        button.showsTouchWhenHighlighted = true
         
         if isBorder
         {

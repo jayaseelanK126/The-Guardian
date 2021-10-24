@@ -15,4 +15,5 @@ struct NewsModel
     let newsThumbnail: String
     let newsBody: String
     let newsURL: String
+    let newsThumbnailImgData: Data
 }

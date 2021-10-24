@@ -41,7 +41,9 @@ class ViewController: UIViewController {
     
     func setUpMethod()
     {
+        NotificationCenter.default.addObserver(self,selector: #selector(onDidReceiveData), name: .didReceiveData, object: nil)
         
+
         newsListTblView.register(UINib(nibName: "NewsListTableViewCell", bundle: nil), forCellReuseIdentifier: "NewsListCell")
         
         refreshControl.attributedTitle = NSAttributedString(string: "Fetching News Data...")
@@ -59,6 +61,13 @@ class ViewController: UIViewController {
         fetchNewsData(false)
     }
     
+    @objc func onDidReceiveData(_ notification: Notification)
+    {
+            
+            print("Data....Oberverd")
+        
+    }
+
     //MARK:- Fetching Data from API/Local data base
     
     func fetchNewsData(_ isShowLoader:Bool)
@@ -128,8 +137,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate
         cell.newsTitleLbl.text = newsListArr[indexPath.row].newsTitle
         cell.publicationDateLbl.text = GenericMethod.formatDateStr(dateStr: newsListArr[indexPath.row].publicationDate, sourceDateFormat: AppConfig.timeStampFormat, destinationDateFormat: "EEEE, MMM d, yyyy").dateStr
         cell.selectionStyle = .none
-        cell.bodyLbl.attributedText = NSAttributedString(html: newsListArr[indexPath.row].newsBody)
-        cell.newsThumbnailImg.loadURLImage(urlStr: self.newsListArr[indexPath.row].newsThumbnail)
+        cell.bodyLbl.text = newsListArr[indexPath.row].newsBody.html2String
+        cell.newsThumbnailImg.image = UIImage(data: self.newsListArr[indexPath.row].newsThumbnailImgData) //loadURLImage(urlStr: self.newsListArr[indexPath.row].newsThumbnail)
         
         return cell
         

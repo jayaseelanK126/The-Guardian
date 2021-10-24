@@ -4,11 +4,11 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Roboto-Bold.ttf</string>
-		<string>Roboto-Medium.ttf</string>
-		<string>Roboto-Regular.ttf</string>
-		<string>Roboto-Light.ttf</string>
-		<string>Roboto-LightItalic.ttf</string>
+		<string>Helvetica-Bold.ttf</string>
+		<string>Helvetica-Medium.ttf</string>
+		<string>Helvetica-Regular.ttf</string>
+		<string>Helvetica-rounded-bold.ttf</string>
+		<string>Helvetica-Italic.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

@@ -2,19 +2,12 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Roboto-Bold.ttf">
-            <string>Roboto-Bold</string>
-        </array>
-        <array key="Roboto-Medium.ttf">
-            <string>Roboto-Medium</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -31,8 +24,8 @@
                                 <rect key="frame" x="0.0" y="418.5" width="286" height="69"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Guardian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaJ-Sn-4ed">
-                                        <rect key="frame" x="124" y="31" width="157" height="30"/>
-                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="26"/>
+                                        <rect key="frame" x="122" y="31" width="159" height="30"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="26"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
@@ -52,26 +45,17 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEWS App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahv-4E-7CF">
-                                <rect key="frame" x="199.5" y="495.5" width="81.5" height="20"/>
-                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                                <rect key="frame" x="195.5" y="495.5" width="85.5" height="20"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="AIj-oA-qlA">
-                                <rect key="frame" x="167" y="535.5" width="80" height="87"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="JxD-KW-kfC"/>
-                                    <constraint firstAttribute="height" constant="87" id="lxw-e1-CXC"/>
-                                </constraints>
-                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="AIj-oA-qlA" firstAttribute="centerX" secondItem="xGg-Yx-5JA" secondAttribute="centerX" id="1Uf-7p-BgU"/>
                             <constraint firstItem="xGg-Yx-5JA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-44" id="6pa-JL-UZS"/>
                             <constraint firstItem="Hsv-es-IRD" firstAttribute="centerY" secondItem="by1-yP-EAp" secondAttribute="centerY" id="990-Yq-Dqn"/>
-                            <constraint firstItem="AIj-oA-qlA" firstAttribute="top" secondItem="Ahv-4E-7CF" secondAttribute="bottom" constant="20" id="FTR-XT-ozd"/>
                             <constraint firstItem="xGg-Yx-5JA" firstAttribute="trailing" secondItem="by1-yP-EAp" secondAttribute="trailing" id="Huf-W3-Wtq"/>
                             <constraint firstItem="xGg-Yx-5JA" firstAttribute="leading" secondItem="Hsv-es-IRD" secondAttribute="leading" id="NKT-LU-kT8"/>
                             <constraint firstItem="by1-yP-EAp" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bCz-2U-vdh"/>

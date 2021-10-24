@@ -11,7 +11,7 @@ import RealmSwift
 struct NewsListModelView
 {
     
-    func getNewList(_ result:@escaping([NewsModel]) -> Void)
+    func getNewsListFromServer(_ result:@escaping([NewsModel]) -> Void)
     {
         NetworkManager.GETMethodRequestWithKey(CountryName: "Afghanistan") { data in
             
@@ -43,7 +43,7 @@ struct NewsListModelView
             {
                 _ = result.map { results in
                     
-                    newsModelArr.append(NewsModel(id: results.id, publicationDate: results.webPublicationDate, newsTitle: results.webTitle, newsThumbnail: results.fields.thumbnail, newsBody: results.fields.body, newsURL: results.webUrl))
+                    newsModelArr.append(NewsModel(id: results.id, publicationDate: results.webPublicationDate, newsTitle: results.webTitle, newsThumbnail: results.fields.thumbnail, newsBody: results.fields.body, newsURL: results.webUrl, newsThumbnailImgData: GenericMethod.loadURLToData(urlStr: results.fields.thumbnail)))
                 }
             }
             else
@@ -92,6 +92,7 @@ struct NewsListModelView
                 newsObj.newsThumbnail = result.newsThumbnail
                 newsObj.newsTitle = result.newsTitle
                 newsObj.newsURL = result.newsURL
+                newsObj.thumbNailImgData = result.newsThumbnailImgData
                 
                 realm.add(newsObj)
             }
@@ -108,7 +109,7 @@ struct NewsListModelView
 
         _ = Array(newsModel).map{ results in
             
-            newsModelArr.append(NewsModel(id: results.id, publicationDate: results.publicationDate, newsTitle: results.newsTitle, newsThumbnail: results.newsThumbnail, newsBody: results.newsBody, newsURL: results.newsURL))
+            newsModelArr.append(NewsModel(id: results.id, publicationDate: results.publicationDate, newsTitle: results.newsTitle, newsThumbnail: results.newsThumbnail, newsBody: results.newsBody, newsURL: results.newsURL, newsThumbnailImgData: results.thumbNailImgData!))
         }
         result(newsModelArr)
     }
@@ -125,10 +126,19 @@ struct NewsListModelView
         }
         else
         {
-            getNewList { newsResult in
+            getNewsListFromServer { newsResult in
                 result(newsResult)
             }
             
+        }
+    }
+    
+    mutating func backGroundRefreshMethod()
+    {
+        getNewsListFromServer { result in
+            
+            NotificationCenter.default.post(name: .didReceiveData, object: nil)
+
         }
     }
 }

@@ -51,12 +51,15 @@ class DetailsViewController: UIViewController {
         {
             publicationDateLbl.text = "---"
         }
-        thumbNailImg.loadURLImage(urlStr: newsDetails?.newsThumbnail ?? "")
+        thumbNailImg.image = UIImage(data: newsDetails!.newsThumbnailImgData)
 
     }
     func loadHTMLStringImage() -> Void
     {
-        webView.loadHTMLString(newsDetails?.newsBody ?? "", baseURL: nil)
+
+        let font = "<font face='Helvetica-Light' size=5>%@"
+        let html = String(format: font, newsDetails!.newsBody)
+        webView.loadHTMLString(html, baseURL: nil)
     }
     
     @IBAction func readMoreBtnAction(_ sender: Any)
@@ -81,3 +84,4 @@ class DetailsViewController: UIViewController {
     }
     
 }
+

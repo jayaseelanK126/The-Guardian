@@ -59,18 +59,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
-//MARK:- UIApplication
-extension UIApplication
-{
-    func topMostController() -> UIViewController
-    {
-        var topController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController
-        while ((topController?.presentedViewController) != nil) {
-            topController = topController?.presentedViewController
-        }
-        return topController!
-    }
-    
-}
 
 
