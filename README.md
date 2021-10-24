@@ -27,4 +27,4 @@
 # Application Screenshots
 
    * News List Page 
-   ![Screenshot](News List.png)
+   ![](/Users/pyramid/Documents/The-Guardian/Screenshot/News List.png)
