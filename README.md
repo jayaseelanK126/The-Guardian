@@ -25,6 +25,5 @@
  * Double click 'The Guardian.xcworkspace' file in The - Guardian application cloned root directory
 
 # Application Screenshots
-
-   * News List Page 
-   ![](/Users/pyramid/Documents/The-Guardian/Screenshot/News List.png)
+[![Simulator-Screen-Shot-i-Phone-12-2021-10-25-at-12-54-26.png](https://i.postimg.cc/tgMGLh1n/Simulator-Screen-Shot-i-Phone-12-2021-10-25-at-12-54-26.png)](https://postimg.cc/Z9pQNvxJ)
+[![Simulator-Screen-Shot-i-Phone-12-2021-10-25-at-12-55-23.png](https://i.postimg.cc/bYbfBSqd/Simulator-Screen-Shot-i-Phone-12-2021-10-25-at-12-55-23.png)](https://postimg.cc/qgkFtRhd)
