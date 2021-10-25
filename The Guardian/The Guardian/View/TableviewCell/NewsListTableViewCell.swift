@@ -33,11 +33,10 @@ class NewsListTableViewCell: UITableViewCell {
     
     func setDesignStyle()
     {
-        CSS.customLabel(newsTitleLbl, textColor: .black, fontCode: "M", fontSize: 15.0)
-        CSS.customLabel(bodyLbl, textColor: .gray, fontCode: "M", fontSize: 13.0)
-        CSS.customLabel(publicationDateLbl, textColor: .lightGray, fontCode: "I", fontSize: 12.0)
+        CSS.customLabel(newsTitleLbl, textColor: .black)
+        CSS.customLabel(bodyLbl, textColor: .gray)
+        CSS.customLabel(publicationDateLbl, textColor: .lightGray)
         CSS.customCardView(outerView)
         newsThumbnailImg.makeRounded(cornerRadius: 15.0)
     }
-    
 }

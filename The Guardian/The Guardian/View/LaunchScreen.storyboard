@@ -20,52 +20,34 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="xGg-Yx-5JA">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hsv-es-IRD">
-                                <rect key="frame" x="0.0" y="418.5" width="286" height="69"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Guardian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaJ-Sn-4ed">
-                                        <rect key="frame" x="122" y="31" width="159" height="30"/>
-                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="26"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="SaJ-Sn-4ed" secondAttribute="bottom" constant="8" id="NcJ-4d-0mE"/>
-                                    <constraint firstAttribute="trailing" secondItem="SaJ-Sn-4ed" secondAttribute="trailing" constant="5" id="Y1v-bI-udk"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="by1-yP-EAp">
-                                <rect key="frame" x="294" y="419" width="120" height="68"/>
-                                <color key="backgroundColor" red="0.94081234930000002" green="0.57892870900000004" blue="0.082873336970000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="bSw-aV-H2M"/>
-                                    <constraint firstAttribute="width" constant="120" id="kNp-AU-R9v"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEWS App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahv-4E-7CF">
-                                <rect key="frame" x="195.5" y="495.5" width="85.5" height="20"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEWS App" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahv-4E-7CF">
+                                <rect key="frame" x="245" y="476" width="91" height="21"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Guardian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaJ-Sn-4ed">
+                                <rect key="frame" x="78" y="425" width="258" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="E7W-Me-1Xg"/>
+                                    <constraint firstAttribute="width" constant="258" id="t86-BQ-PAW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="SaJ-Sn-4ed" firstAttribute="centerX" secondItem="xGg-Yx-5JA" secondAttribute="centerX" id="4sV-EC-mbO"/>
                             <constraint firstItem="xGg-Yx-5JA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-44" id="6pa-JL-UZS"/>
-                            <constraint firstItem="Hsv-es-IRD" firstAttribute="centerY" secondItem="by1-yP-EAp" secondAttribute="centerY" id="990-Yq-Dqn"/>
-                            <constraint firstItem="xGg-Yx-5JA" firstAttribute="trailing" secondItem="by1-yP-EAp" secondAttribute="trailing" id="Huf-W3-Wtq"/>
-                            <constraint firstItem="xGg-Yx-5JA" firstAttribute="leading" secondItem="Hsv-es-IRD" secondAttribute="leading" id="NKT-LU-kT8"/>
-                            <constraint firstItem="by1-yP-EAp" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bCz-2U-vdh"/>
-                            <constraint firstItem="Ahv-4E-7CF" firstAttribute="trailing" secondItem="SaJ-Sn-4ed" secondAttribute="trailing" id="bYQ-YS-lKv"/>
+                            <constraint firstItem="Ahv-4E-7CF" firstAttribute="trailing" secondItem="SaJ-Sn-4ed" secondAttribute="trailing" id="8cJ-zj-hPx"/>
+                            <constraint firstItem="Ahv-4E-7CF" firstAttribute="top" secondItem="SaJ-Sn-4ed" secondAttribute="bottom" constant="5" id="Fsu-hJ-JRS"/>
+                            <constraint firstItem="SaJ-Sn-4ed" firstAttribute="centerY" secondItem="xGg-Yx-5JA" secondAttribute="centerY" id="bYn-qj-z3r"/>
                             <constraint firstItem="xGg-Yx-5JA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="cAF-8r-f2r"/>
-                            <constraint firstItem="Hsv-es-IRD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ger-Q7-5No"/>
-                            <constraint firstItem="Hsv-es-IRD" firstAttribute="height" secondItem="by1-yP-EAp" secondAttribute="height" multiplier="1.01961" id="paY-7c-wIJ"/>
-                            <constraint firstItem="Ahv-4E-7CF" firstAttribute="top" secondItem="Hsv-es-IRD" secondAttribute="bottom" constant="8" id="s7f-v2-ycZ"/>
-                            <constraint firstItem="by1-yP-EAp" firstAttribute="leading" secondItem="Hsv-es-IRD" secondAttribute="trailing" constant="8" id="wQW-x3-i8J"/>
-                            <constraint firstItem="by1-yP-EAp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zgt-CX-mat"/>
+                            <constraint firstItem="xGg-Yx-5JA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="clG-tr-mpU"/>
+                            <constraint firstAttribute="trailing" secondItem="xGg-Yx-5JA" secondAttribute="trailing" id="kql-up-2g5"/>
                         </constraints>
                     </view>
                 </viewController>

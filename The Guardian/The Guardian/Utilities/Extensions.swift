@@ -48,7 +48,7 @@ extension NSAttributedString
     }
 }
 
-//MARK:- UIApplication
+//MARK: - UIApplication
 extension UIApplication
 {
     func topMostController() -> UIViewController
@@ -65,7 +65,7 @@ extension UIApplication
 extension Notification.Name {
     static let didReceiveData = Notification.Name("didReceiveData")
     static let didCompleteTask = Notification.Name("didCompleteTask")
-    static let completedLengthyDownload = Notification.Name("completedLengthyDownload")
+    static let didNoDataReceived = Notification.Name("didNoDataReceived")
 }
 
 extension StringProtocol {

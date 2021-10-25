@@ -32,13 +32,14 @@ class DetailsViewController: UIViewController {
     
     func setDesignStyle()
     {
-        CSS.customLabel(newsTitleLbl, textColor: .black, fontCode: "M", fontSize: 14.0)
-        CSS.customLabel(publicationDateLbl, textColor: .gray, fontCode: "I", fontSize: 12.0)
-        CSS.customButton(button: readMoreBtn, fontSize: 14.0, titleNormalColor: .white, titleSelectedColor: .white, isRoundCorner: true)
+        CSS.customLabel(newsTitleLbl, textColor: .black)
+        CSS.customLabel(publicationDateLbl, textColor: .gray)
+        CSS.customButton(button: readMoreBtn, titleNormalColor: .white, titleSelectedColor: .white, isRoundCorner: true)
         thumbNailImg.makeRounded(cornerRadius: 15.0)
         backBtn.setTitle("", for: .normal)
     }
     
+    //MARK: - Initial setup
     func setupMethod()
     {
         loadHTMLStringImage()
@@ -54,6 +55,8 @@ class DetailsViewController: UIViewController {
         thumbNailImg.image = UIImage(data: newsDetails!.newsThumbnailImgData)
 
     }
+    
+//MARK: - Load HTML String in webview
     func loadHTMLStringImage() -> Void
     {
 
@@ -62,6 +65,7 @@ class DetailsViewController: UIViewController {
         webView.loadHTMLString(html, baseURL: nil)
     }
     
+    //MARK: - Read on website button action
     @IBAction func readMoreBtnAction(_ sender: Any)
     {
         if ReachabilityManager.shared.isConnectedToNetwork() == false
@@ -78,6 +82,7 @@ class DetailsViewController: UIViewController {
         
     }
     
+    //MARK: - Back to list page button action 
     @IBAction func backBtnAction(_ sender: Any)
     {
         dismiss(animated: true, completion: nil)

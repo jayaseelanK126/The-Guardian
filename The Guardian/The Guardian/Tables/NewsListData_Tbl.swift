@@ -8,9 +8,10 @@
 import Foundation
 import RealmSwift
 
+//MATK:- Realm table 
 class NewsListData_Tbl: Object
 {
-    @objc dynamic var MobilePrimaryId: Int = 0
+    @objc dynamic var MobilePrimaryId: Int = 1
     @objc dynamic var id: String = ""
     @objc dynamic var publicationDate: String = ""
     @objc dynamic var newsTitle: String = ""

@@ -10,13 +10,12 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var headerLbl: UILabel!
     @IBOutlet weak var newsListTblView: UITableView!
+    @IBOutlet weak var noDataView: UIView!
     
-    
-    //MARK:- Initial Declaration
+    //MARK: - Initial Declaration
     
     var newsListModelViewObj = NewsListModelView()
     
@@ -28,7 +27,7 @@ class ViewController: UIViewController {
     var activityView: UIActivityIndicatorView?
     
     
-    //MARK:- View lifecycle
+    //MARK: - View lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,13 +36,19 @@ class ViewController: UIViewController {
         
     }
     
-    //MARK:- Initial setup
+    override func viewDidDisappear(_ animated: Bool)
+    {
+        NotificationCenter.default.removeObserver(self)
+    }
     
+    //MARK: - Initial setup
     func setUpMethod()
     {
         NotificationCenter.default.addObserver(self,selector: #selector(onDidReceiveData), name: .didReceiveData, object: nil)
+        NotificationCenter.default.addObserver(self,selector: #selector(onNoReceiveData), name: .didNoDataReceived, object: nil)
         
-
+        noDataView.isHidden = true
+        
         newsListTblView.register(UINib(nibName: "NewsListTableViewCell", bundle: nil), forCellReuseIdentifier: "NewsListCell")
         
         refreshControl.attributedTitle = NSAttributedString(string: "Fetching News Data...")
@@ -53,23 +58,31 @@ class ViewController: UIViewController {
         fetchNewsData(true)
     }
     
-    //MARK:- Pull to refresh action method
-    
+    //MARK: - Pull to refresh action method
     @objc private func refreshNewsData(_ sender: Any) {
         // Fetch Weather Data
         
         fetchNewsData(false)
     }
     
+    //MARK: - Background apprefresh observer action function
     @objc func onDidReceiveData(_ notification: Notification)
     {
-            
-            print("Data....Oberverd")
-        
+        fetchNewsData(false)
     }
-
-    //MARK:- Fetching Data from API/Local data base
     
+    //MARK: - No data received from API observer action function
+    @objc func onNoReceiveData(_ notification: Notification)
+    {
+        self.hideActivityIndicator()
+        
+        DispatchQueue.main.async
+        {
+            self.noDataView.isHidden = false
+        }
+    }
+    
+    //MARK: - Fetching Data from API/Local data base
     func fetchNewsData(_ isShowLoader:Bool)
     {
         if isShowLoader
@@ -84,12 +97,15 @@ class ViewController: UIViewController {
             
             if self.newsListArr.count == 0
             {
+                self.noDataView.isHidden = false
                 ReachabilityManager.shared.noInternetConnectionAlert()
             }
             else
             {
                 DispatchQueue.main.async
                 {
+                    self.noDataView.isHidden = true
+                    
                     self.hideActivityIndicator()
                     
                     self.refreshControl.endRefreshing()
@@ -102,8 +118,7 @@ class ViewController: UIViewController {
         }
     }
     
-    //MARK:- Fetching data activity indicator show/hide
-    
+    //MARK: - Fetching data activity indicator show/hide
     func showActivityIndicator() {
         activityView = UIActivityIndicatorView(style: .large)
         activityView?.center = self.view.center
@@ -124,7 +139,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate
 {
-    //MARK:- TableView DataSources Methods
+    //MARK: - TableView DataSources Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -144,7 +159,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate
         
     }
     
-    //MARK:- TableView Delegate Methods
+    //MARK: - TableView Delegate Methods
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
         return UITableView.automaticDimension
@@ -157,8 +172,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate
         
     }
     
-    //MARK:- Data passing between two views
-    
+    //MARK: - Data passing between two views
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail"
         {

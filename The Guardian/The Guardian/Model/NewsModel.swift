@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK: - Model
 struct NewsModel
 {
     let id: String

@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK- Model for parse JSON value from API
 struct NewsData: Codable
 {
     let response: Response

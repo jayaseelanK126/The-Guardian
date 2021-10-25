@@ -10,7 +10,7 @@ import UIKit
 
 public class GenericMethod: NSObject
 {
-    //MARK:- Alert Methods
+    //MARK: - Alert Methods
     
     class func showAlert(_ alertMessage: String)
     {

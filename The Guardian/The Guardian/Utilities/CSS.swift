@@ -10,39 +10,11 @@ import UIKit
 
 class CSS: NSObject
 {
-    static func customLabel(_ label: UILabel, textColor: UIColor, fontCode: String, fontSize: CGFloat)
+    static func customLabel(_ label: UILabel, textColor: UIColor)
     {
         label.clipsToBounds = true
         label.backgroundColor = UIColor.clear
         label.textColor = textColor
-        
-//        var fontSizeVal = fontSize
-//
-//        if AppConfig.isiPad
-//        {
-//            fontSizeVal = fontSize + 2.0
-//        }
-//        if fontCode == "R"
-//        {
-//            label.font = UIFont(name: "Helvetica-Regular", size: fontSizeVal)!
-//        }
-//        else if fontCode == "M"
-//        {
-//            label.font = UIFont(name: "Helvetica-Medium", size: fontSizeVal)!
-//        }
-//        else if fontCode == "B"
-//        {
-//            label.font = UIFont(name: "Helvetica-Bold", size: fontSizeVal)!
-//        }
-//        else if fontCode == "L"
-//        {
-//            label.font = UIFont(name: "Helvetica-Regular", size: fontSizeVal)!
-//        }
-//        else if fontCode == "I"
-//        {
-//            label.font = UIFont(name: "Helvetica-Italic", size: fontSizeVal)!
-//        }
-        
     }
     
     static func customCardView(_ view: UIView?,Bgcolor : UIColor = .white,BorderColor: UIColor = .lightGray, borderWidth: CGFloat = 0.2, cornerRadius: CGFloat = 5.0, isClipsToBounds: Bool = false, isDefaultValues: Bool = true)
@@ -74,30 +46,13 @@ class CSS: NSObject
     }
     
     
-    static func customButton(button: UIButton, fontSize : CGFloat, titleNormalColor: UIColor, titleSelectedColor: UIColor, backgroundColor: UIColor = .clear, isBorder: Bool = false, borderColor: UIColor = .clear, borderWidth: CGFloat = 0.0, isRoundCorner: Bool = false, cornerRadius: CGFloat = 2.0, fontCode: String = "", isShadow: Bool = false)
+    static func customButton(button: UIButton, titleNormalColor: UIColor, titleSelectedColor: UIColor, backgroundColor: UIColor = .clear, isBorder: Bool = false, borderColor: UIColor = .clear, borderWidth: CGFloat = 0.0, isRoundCorner: Bool = false, cornerRadius: CGFloat = 2.0, isShadow: Bool = false)
     {
         
         if button.layer != nil
         {
-            CSS.inserGradientLayer(layer: button.layer, Colors: [#colorLiteral(red: 0.9408123493, green: 0.578928709, blue: 0.08287333697, alpha: 1),#colorLiteral(red: 0.6306855083, green: 0.1065401658, blue: 0.01793291047, alpha: 1)])
+            CSS.inserGradientLayer(layer: button.layer, Colors: [#colorLiteral(red: 0.290884316, green: 0.6459454894, blue: 0.9161052108, alpha: 1),#colorLiteral(red: 0.04919955879, green: 0.2176415026, blue: 0.4419623315, alpha: 1)])
         }
-        
-//        if fontCode == "R"
-//        {
-//            button.titleLabel?.font = UIFont(name: "Helvetica-Regular", size: fontSize)!
-//        }
-//        else if fontCode == "M"
-//        {
-//            button.titleLabel?.font = UIFont(name: "Helvetica-Medium", size: fontSize)!
-//        }
-//        else if fontCode == "B"
-//        {
-//            button.titleLabel?.font = UIFont(name: "Helvetica-Regular", size: fontSize)!
-//        }
-//        else if fontCode == "L"
-//        {
-//            button.titleLabel?.font = UIFont(name: "Helvetica-Italic", size: fontSize)!
-//        }
         
         button.titleLabel?.textAlignment = .center
         button.layer.cornerRadius = isRoundCorner ? button.frame.size.height / 2 : cornerRadius

@@ -8,13 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		14AD107ED5D4F4CA1F0A7149 /* Pods_The_GuardianTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533969465E0F9A5FD6836BD8 /* Pods_The_GuardianTests.framework */; };
-		581723A52725492400439646 /* Helvetica-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5817239F2725491A00439646 /* Helvetica-Medium.ttf */; };
-		581723A62725492400439646 /* Helvetica-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 581723A02725491D00439646 /* Helvetica-Italic.ttf */; };
-		581723A72725492400439646 /* Helvetica-BoldOblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 581723A12725491F00439646 /* Helvetica-BoldOblique.ttf */; };
-		581723A82725492400439646 /* Helvetica-rounded-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 581723A22725492100439646 /* Helvetica-rounded-bold.ttf */; };
-		581723A92725492400439646 /* Helvetica-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 581723A32725492300439646 /* Helvetica-Regular.ttf */; };
-		581723AA2725492400439646 /* Helvetica-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 581723A42725492400439646 /* Helvetica-Bold.ttf */; };
 		581723AC2725521F00439646 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 581723AB2725521E00439646 /* README.md */; };
+		58450AC827259472001A516C /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58450AC727259471001A516C /* AppIcon.xcassets */; };
 		58891B5827248D5F008C2FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58891B5727248D5F008C2FE7 /* AppDelegate.swift */; };
 		58891B5A27248D5F008C2FE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58891B5927248D5F008C2FE7 /* SceneDelegate.swift */; };
 		58891B6F27248D61008C2FE7 /* The_GuardianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58891B6E27248D61008C2FE7 /* The_GuardianTests.swift */; };
@@ -63,13 +58,8 @@
 		36C22F70EE9AD5961690108B /* Pods-The Guardian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Guardian.debug.xcconfig"; path = "Target Support Files/Pods-The Guardian/Pods-The Guardian.debug.xcconfig"; sourceTree = "<group>"; };
 		3C7EFAC343DD0B56510DF300 /* Pods-The Guardian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Guardian.release.xcconfig"; path = "Target Support Files/Pods-The Guardian/Pods-The Guardian.release.xcconfig"; sourceTree = "<group>"; };
 		533969465E0F9A5FD6836BD8 /* Pods_The_GuardianTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_GuardianTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5817239F2725491A00439646 /* Helvetica-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Medium.ttf"; sourceTree = "<group>"; };
-		581723A02725491D00439646 /* Helvetica-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Italic.ttf"; sourceTree = "<group>"; };
-		581723A12725491F00439646 /* Helvetica-BoldOblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-BoldOblique.ttf"; sourceTree = "<group>"; };
-		581723A22725492100439646 /* Helvetica-rounded-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-rounded-bold.ttf"; sourceTree = "<group>"; };
-		581723A32725492300439646 /* Helvetica-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Regular.ttf"; sourceTree = "<group>"; };
-		581723A42725492400439646 /* Helvetica-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Bold.ttf"; sourceTree = "<group>"; };
 		581723AB2725521E00439646 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		58450AC727259471001A516C /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		58891B5427248D5F008C2FE7 /* The Guardian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Guardian.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58891B5727248D5F008C2FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58891B5927248D5F008C2FE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,8 +158,8 @@
 				58891BBA272494E5008C2FE7 /* View */,
 				58891BC027249550008C2FE7 /* View Controller */,
 				58891B9327248E18008C2FE7 /* Assets.xcassets */,
+				58450AC727259471001A516C /* AppIcon.xcassets */,
 				58891BD827249638008C2FE7 /* Base.lproj */,
-				58891BC527249576008C2FE7 /* Fonts */,
 				58891B6527248D61008C2FE7 /* Info.plist */,
 			);
 			path = "The Guardian";
@@ -256,19 +246,6 @@
 				58891BC227249567008C2FE7 /* ViewController.swift */,
 			);
 			path = "View Controller";
-			sourceTree = "<group>";
-		};
-		58891BC527249576008C2FE7 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				581723A42725492400439646 /* Helvetica-Bold.ttf */,
-				581723A12725491F00439646 /* Helvetica-BoldOblique.ttf */,
-				581723A02725491D00439646 /* Helvetica-Italic.ttf */,
-				5817239F2725491A00439646 /* Helvetica-Medium.ttf */,
-				581723A32725492300439646 /* Helvetica-Regular.ttf */,
-				581723A22725492100439646 /* Helvetica-rounded-bold.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		E273C605CBADCB77F343BC7C /* Pods */ = {
@@ -404,17 +381,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				58891BBF27249543008C2FE7 /* NewsListTableViewCell.xib in Resources */,
-				581723A72725492400439646 /* Helvetica-BoldOblique.ttf in Resources */,
 				58891B9F27249327008C2FE7 /* LaunchScreen.storyboard in Resources */,
 				58891BD927249638008C2FE7 /* Base.lproj in Resources */,
-				581723A82725492400439646 /* Helvetica-rounded-bold.ttf in Resources */,
-				581723A92725492400439646 /* Helvetica-Regular.ttf in Resources */,
+				58450AC827259472001A516C /* AppIcon.xcassets in Resources */,
 				581723AC2725521F00439646 /* README.md in Resources */,
-				581723A62725492400439646 /* Helvetica-Italic.ttf in Resources */,
-				581723AA2725492400439646 /* Helvetica-Bold.ttf in Resources */,
 				58891B9D27249319008C2FE7 /* Main.storyboard in Resources */,
 				58891B9427248E18008C2FE7 /* Assets.xcassets in Resources */,
-				581723A52725492400439646 /* Helvetica-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,6 +687,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YF8KK5PV4C;
@@ -731,8 +704,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sizeclass.The-Guardian";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guardianapis.content;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -745,6 +719,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YF8KK5PV4C;
@@ -761,8 +736,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sizeclass.The-Guardian";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guardianapis.content;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
