@@ -13,7 +13,7 @@ class CSS: NSObject
     static func customLabel(_ label: UILabel, textColor: UIColor)
     {
         label.clipsToBounds = true
-        label.backgroundColor = UIColor.clear
+        label.backgroundColor = .white
         label.textColor = textColor
     }
     
@@ -43,10 +43,11 @@ class CSS: NSObject
         layer.cornerRadius = isRoundCorner ? (layer.bounds.height / 2) : cornerRadius
         layer.insertSublayer(gradient, at: 0)
         layer.masksToBounds = true
+        
     }
     
     
-    static func customButton(button: UIButton, titleNormalColor: UIColor, titleSelectedColor: UIColor, backgroundColor: UIColor = .clear, isBorder: Bool = false, borderColor: UIColor = .clear, borderWidth: CGFloat = 0.0, isRoundCorner: Bool = false, cornerRadius: CGFloat = 2.0, isShadow: Bool = false)
+    static func customButton(button: UIButton, titleNormalColor: UIColor, titleSelectedColor: UIColor, backgroundColor: UIColor = .white, isBorder: Bool = false, borderColor: UIColor = .white, borderWidth: CGFloat = 0.0, isRoundCorner: Bool = false, cornerRadius: CGFloat = 2.0, isShadow: Bool = false)
     {
         
         if button.layer != nil

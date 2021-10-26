@@ -22,6 +22,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Guardian" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2I-WK-crU">
                                         <rect key="frame" x="15" y="54" width="123" height="30"/>
+                                        <color key="backgroundColor" red="0.019607843140000001" green="0.16078431369999999" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Zrk-Dk-NNZ"/>
                                         </constraints>
@@ -103,12 +104,14 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Details" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="oQQ-HW-3WG">
                                         <rect key="frame" x="45" y="54" width="325" height="31"/>
+                                        <color key="backgroundColor" red="0.019607843140000001" green="0.16078431369999999" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVM-wn-nYD">
                                         <rect key="frame" x="5" y="52" width="35" height="35"/>
+                                        <color key="backgroundColor" red="0.019935902209999998" green="0.16158425809999999" blue="0.3828213513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="kVM-wn-nYD" secondAttribute="height" multiplier="1:1" id="2hu-6I-B82"/>
                                             <constraint firstAttribute="width" constant="35" id="Sog-FP-uhh"/>
@@ -146,12 +149,15 @@
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjg-Y4-kH6">
                                 <rect key="frame" x="10" y="740" width="130" height="30"/>
+                                <color key="backgroundColor" red="0.019607843140000001" green="0.16078431369999999" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Mo6-F5-DBv"/>
                                     <constraint firstAttribute="width" constant="130" id="a4a-Hf-Yot"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
-                                <state key="normal" title="Read On Website"/>
+                                <state key="normal" title="Read On Website">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="readMoreBtnAction:" destination="byl-dL-jb2" eventType="touchUpInside" id="XxR-9p-M4L"/>
                                 </connections>
@@ -164,6 +170,7 @@
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A4f-Mo-yXz">
                                 <rect key="frame" x="10" y="161.33333333333334" width="355" height="150.00000000000003"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="YYf-1U-pCb"/>
                                 </constraints>

@@ -153,7 +153,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate
         cell.publicationDateLbl.text = GenericMethod.formatDateStr(dateStr: newsListArr[indexPath.row].publicationDate, sourceDateFormat: AppConfig.timeStampFormat, destinationDateFormat: "EEEE, MMM d, yyyy").dateStr
         cell.selectionStyle = .none
         cell.bodyLbl.text = newsListArr[indexPath.row].newsBody.html2String
-        cell.newsThumbnailImg.image = UIImage(data: self.newsListArr[indexPath.row].newsThumbnailImgData) //loadURLImage(urlStr: self.newsListArr[indexPath.row].newsThumbnail)
+        cell.newsThumbnailImg.image = UIImage(data: self.newsListArr[indexPath.row].newsThumbnailImgData) 
         
         return cell
         
